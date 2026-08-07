@@ -77,12 +77,6 @@ a {
   max-width: 640px;
 }
 
-.hero-visual {
-  display: grid;
-  gap: 18px;
-  align-items: end;
-}
-
 .hero-image {
   width: 100%;
   height: auto;
@@ -155,10 +149,6 @@ a {
   display: block;
   padding-left: 16px;
   border-left: 1px solid var(--border);
-}
-
-.section.cards.highlights {
-  margin-top: 32px;
 }
 
 .section.lookbook {
@@ -292,51 +282,6 @@ a {
   background: rgba(255,255,255,0.04);
 }
 
-.hero-card {
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  padding: 20px;
-  background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
-}
-
-.hero-card-top {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-}
-
-.hero-card-top span {
-  display: block;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-size: 0.72rem;
-  margin-bottom: 8px;
-}
-
-.hero-card-grid {
-  display: grid;
-  gap: 12px;
-}
-
-.card-tile {
-  padding: 16px;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.06);
-}
-
-.card-tile.accent {
-  background: linear-gradient(135deg, rgba(224, 176, 122, 0.28), rgba(224, 176, 122, 0.08));
-}
-
-.info-card, .mini-card, .panel {
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 24px;
-  background: rgba(255,255,255,0.04);
-}
-
 .section {
   max-width: 1180px;
   margin: 30px auto 0;
@@ -349,31 +294,14 @@ a {
   align-items: start;
 }
 
-.intro h2, .panel h2, .footer h2 {
+.intro h2, .footer h2 {
   margin: 0;
   font-size: clamp(1.5rem, 2.4vw, 2.2rem);
 }
 
-.intro p, .panel p, .info-card p, .mini-card p, .footer p {
+.intro p, .footer p {
   color: var(--muted);
   line-height: 1.8;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 16px;
-}
-
-.stacked {
-  display: grid;
-  gap: 16px;
 }
 
 .footer {
@@ -391,8 +319,7 @@ a {
 @media (max-width: 900px) {
   .hero,
   .intro,
-  .split,
-  .cards {
+  .split {
     grid-template-columns: 1fr;
   }
 
