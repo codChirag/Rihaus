@@ -17,5 +17,5 @@ To run locally
    npm run dev
 
 Notes
-- The scaffold copies the structure and sections from the reference site. Replace placeholder text, images, and assets under /public as needed.
-- I will now create a feature branch named `feature/rihaus-site` from this initial commit so we can continue work there.
+- You asked to copy images from the reference site; this scaffold references images by URL in the HTML. To store images inside this repo, download them into the public/images/ directory and update references in pages/index.js.
+- The contact email shown in the scaffold is a generated placeholder: contact+rihaus@example.com. Replace it with a real address before publishing.
